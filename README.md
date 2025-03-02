@@ -2,6 +2,10 @@
 
 This is a simple shopping cart project built using **React.js** and **Redux Toolkit**. The application allows users to browse products, add items to the cart, manage cart quantities, and proceed to checkout.
 
+## Credentials
+- Name: any string
+- Password: any string
+
 ## Features
 
 - 🛍️ **Product Listing** - Displays a list of products fetched from an API.
