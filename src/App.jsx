@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {HashRouter, Routes, Route} from 'react-router-dom'
 import SignIn from './pages/SignIn';
 import {useSelector} from 'react-redux'
 import {Navigate} from 'react-router-dom'
@@ -10,7 +10,7 @@ function App() {
   const isLoggedIn = useSelector(isUserLogedIn)
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes> 
         <Route exact path="/" element={
           isLoggedIn 
@@ -23,7 +23,7 @@ function App() {
           : <Navigate to='/'/>
         } />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
